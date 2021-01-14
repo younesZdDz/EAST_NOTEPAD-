@@ -19,5 +19,5 @@ for element in res :
 content += """  </AutoComplete>\n"""
 content += """</NotepadPlus>"""
 
-my_file= open('autocomplete/east.xsd', 'w') 
+my_file= open('autocomplete/east.xml', 'w') 
 my_file.write(content)
