@@ -1,6 +1,6 @@
 import re
-file1 = open('east.xsd', 'r') 
-Lines = file1.readlines() 
+my_file = open('east.xsd', 'r') 
+Lines = my_file.readlines() 
   
 res = []
 for line in Lines: 
@@ -18,4 +18,6 @@ for element in res :
 
 content += """  </AutoComplete>\n"""
 content += """</NotepadPlus>"""
-print(content)
+
+my_file= open('autocomplete/east.xsd', 'w') 
+my_file.write(content)
